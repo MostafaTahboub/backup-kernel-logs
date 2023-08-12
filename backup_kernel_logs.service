@@ -1,0 +1,13 @@
+[Unit]
+Description=Backup Kernel Logs Service
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/home/mostafa/Desktop/backup_kernel_logs.sh
+User=mostafa
+workingDirectory=/home/mostafa
+[Install]
+WantedBy=default.target
+
